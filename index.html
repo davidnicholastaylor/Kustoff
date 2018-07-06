@@ -13,9 +13,19 @@
             <!-- Basic Info -->
             <section>
                 <img src="images/Kustoff.jpg" class="picture">
-                <h1 class="name">David Kustoff</h1>
-                <h2 class="district">Representative for Tennessee's 8th congressional district</h2>
-                <h2 class="party">Republican</h2>
+                <div id="basic">
+                    <h1 class="name">David Kustoff</h1>
+                    <h3 class="district" att="congressional-district">8th District of Tennessee</h3>
+                    <h3 class="party">Republican</h3>
+                </div>
+                <script>
+                    var para = document.createElement("p");
+                    var newPara = document.createTextNode("Making empty promises. Towing the party line.");
+                    para.appendChild(newPara);
+
+                    var element = document.getElementById("basic");
+                    element.appendChild(para);
+                </script>
                 <!--Committees-->
                 <section>
                     <h4>Committees</h4>
@@ -28,6 +38,7 @@
                     <h4><a href="https://www.congress.gov/member/david-kustoff/K000392">Sponsored Legislation</a></h4>
                 </section>
             </section>
+        <script src="attribute.js"></script>
         </article>
     </div>
 </body>
